@@ -78,7 +78,7 @@ const HeroCarousel = () => {
                 src={item.src}
                 alt={item.alt}
                 fill
-                style={{ objectFit: 'cover' }}
+                style={{ objectFit: 'contain' }}
                 data-ai-hint={item.hint}
                 priority={index === 0}
               />
