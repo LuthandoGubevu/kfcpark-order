@@ -13,40 +13,40 @@ import 'swiper/css/effect-fade';
 
 const carouselImages = [
   {
-    src: "https://placehold.co/2000x400.png",
-    alt: "Hero Image 1 - Placeholder (2000x400) for exciting restaurant scene",
-    hint: "restaurant food",
-    title: "Experience Our Culinary Delights",
+    src: "/images/all-star.jpeg",
+    alt: "All-Star Special Offer",
+    hint: "food promotion",
+    title: "Our All-Star Deal!",
   },
   {
-    src: "https://placehold.co/2000x400.png",
-    alt: "Hero Image 2 - Placeholder (2000x400) for vibrant dining atmosphere",
-    hint: "dining atmosphere",
-    title: "A Perfect Ambiance For You",
+    src: "/images/bogof.jpeg",
+    alt: "Buy One Get One Free Offer",
+    hint: "discount offer",
+    title: "BOGOF! Don't Miss Out!",
   },
   {
-    src: "https://placehold.co/2000x400.png",
-    alt: "Hero Image 3 - Placeholder (2000x400) for special dish feature",
-    hint: "special dish",
-    title: "Discover Your New Favorite",
+    src: "/images/burger-era.jpeg",
+    alt: "Delicious Burger from Burger Era",
+    hint: "burger meal",
+    title: "Welcome to the Burger Era",
   },
   {
-    src: "https://placehold.co/2000x400.png",
-    alt: "Hero Image 4 - Placeholder (2000x400) for fresh ingredients",
-    hint: "fresh ingredients",
-    title: "Made With The Freshest Ingredients",
+    src: "/images/family-fiesta.jpeg",
+    alt: "Family Fiesta Meal Deal",
+    hint: "family meal",
+    title: "Family Fiesta: Fun for All!",
   },
   {
-    src: "https://placehold.co/2000x400.png",
-    alt: "Hero Image 5 - Placeholder (2000x400) for our skilled chefs",
-    hint: "chef cooking",
-    title: "Crafted by Expert Chefs",
+    src: "/images/monday.jpeg",
+    alt: "Special Monday Deal",
+    hint: "weekday special",
+    title: "Make Your Monday Special",
   },
   {
-    src: "https://placehold.co/2000x400.png",
-    alt: "Hero Image 6 - Placeholder (2000x400) for a cozy dining experience",
-    hint: "cozy dining",
-    title: "Your Cozy Corner Awaits",
+    src: "/images/streetwise.jpeg",
+    alt: "Streetwise Meal Combo",
+    hint: "street food",
+    title: "Get Streetwise with Our Combo",
   },
 ];
 
@@ -75,7 +75,7 @@ const HeroCarousel = () => {
               fill
               style={{ objectFit: 'cover' }}
               data-ai-hint={item.hint}
-              priority={index === 0} // Prioritize the first image
+              priority={index === 0}
             />
             <div className="absolute inset-0 flex items-center justify-center bg-black/40 p-4">
               <h2 className="text-4xl md:text-5xl font-bold text-white text-center drop-shadow-md">
