@@ -30,6 +30,24 @@ const carouselImages = [
     hint: "special dish",
     title: "Discover Your New Favorite",
   },
+  {
+    src: "https://placehold.co/2000x400.png",
+    alt: "Hero Image 4 - Placeholder (2000x400) for fresh ingredients",
+    hint: "fresh ingredients",
+    title: "Made With The Freshest Ingredients",
+  },
+  {
+    src: "https://placehold.co/2000x400.png",
+    alt: "Hero Image 5 - Placeholder (2000x400) for our skilled chefs",
+    hint: "chef cooking",
+    title: "Crafted by Expert Chefs",
+  },
+  {
+    src: "https://placehold.co/2000x400.png",
+    alt: "Hero Image 6 - Placeholder (2000x400) for a cozy dining experience",
+    hint: "cozy dining",
+    title: "Your Cozy Corner Awaits",
+  },
 ];
 
 const HeroCarousel = () => {
