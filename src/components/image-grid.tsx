@@ -1,11 +1,50 @@
 import React from 'react';
 import Image from 'next/image';
 
-const imagePlaceholders = Array.from({ length: 12 }, (_, i) => ({
-  src: `https://placehold.co/1080x1920.png`,
-  alt: `Placeholder Park & Order Image ${i + 1}`,
-  hint: i % 2 === 0 ? "food photography" : "restaurant ambiance",
-}));
+const specificImages = [
+  {
+    src: "/images/1.1.1.png",
+    alt: "Park & Order Image 1.1.1",
+    hint: "food item",
+  },
+  {
+    src: "/images/1.1.2.png",
+    alt: "Park & Order Image 1.1.2",
+    hint: "food item",
+  },
+  {
+    src: "/images/1.1.3.png",
+    alt: "Park & Order Image 1.1.3",
+    hint: "food item",
+  },
+  {
+    src: "/images/1.2.1.png",
+    alt: "Park & Order Image 1.2.1",
+    hint: "restaurant setting",
+  },
+  {
+    src: "/images/1.2.2.png",
+    alt: "Park & Order Image 1.2.2",
+    hint: "restaurant setting",
+  },
+  {
+    src: "/images/1.2.3.png",
+    alt: "Park & Order Image 1.2.3",
+    hint: "restaurant setting",
+  },
+];
+
+const placeholderImagesCount = 12;
+const imagePlaceholders = Array.from({ length: placeholderImagesCount }, (_, i) => {
+  if (i < specificImages.length) {
+    return specificImages[i];
+  }
+  return {
+    src: `https://placehold.co/1080x1920.png`,
+    alt: `Placeholder Park & Order Image ${i + 1}`,
+    hint: i % 2 === 0 ? "food photography" : "restaurant ambiance",
+  };
+});
 
 const ImageGrid = () => {
   return (
