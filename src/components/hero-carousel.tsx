@@ -13,20 +13,20 @@ import 'swiper/css/effect-fade';
 
 const carouselImages = [
   {
-    src: "https://placehold.co/2000x4000.png",
-    alt: "Hero Image 1 - Placeholder (2000x4000) for exciting restaurant scene",
+    src: "https://placehold.co/2000x400.png",
+    alt: "Hero Image 1 - Placeholder (2000x400) for exciting restaurant scene",
     hint: "restaurant food",
     title: "Experience Our Culinary Delights",
   },
   {
-    src: "https://placehold.co/2000x4000.png",
-    alt: "Hero Image 2 - Placeholder (2000x4000) for vibrant dining atmosphere",
+    src: "https://placehold.co/2000x400.png",
+    alt: "Hero Image 2 - Placeholder (2000x400) for vibrant dining atmosphere",
     hint: "dining atmosphere",
     title: "A Perfect Ambiance For You",
   },
   {
-    src: "https://placehold.co/2000x4000.png",
-    alt: "Hero Image 3 - Placeholder (2000x4000) for special dish feature",
+    src: "https://placehold.co/2000x400.png",
+    alt: "Hero Image 3 - Placeholder (2000x400) for special dish feature",
     hint: "special dish",
     title: "Discover Your New Favorite",
   },
