@@ -52,7 +52,7 @@ const carouselImages = [
 
 const HeroCarousel = () => {
   return (
-    <section className="w-full h-screen relative bg-black">
+    <section className="w-full relative bg-black">
       <Swiper
         modules={[Navigation, Pagination, EffectFade, Autoplay]}
         spaceBetween={0}
@@ -65,20 +65,19 @@ const HeroCarousel = () => {
           delay: 5000,
           disableOnInteraction: false,
         }}
-        className="w-full h-full"
+        autoHeight={true} // Adjust height to current slide
+        className="w-full"
       >
         {carouselImages.map((item, index) => {
-          // Added for debugging image paths
-          if (typeof window !== 'undefined') { // Ensure console.log only runs on client
-            console.log('Attempting to load image for carousel:', item.src);
-          }
           return (
-            <SwiperSlide key={index} className="relative w-full h-full">
+            <SwiperSlide key={index} className="relative w-full bg-black">
               <Image
                 src={item.src}
                 alt={item.alt}
-                fill
-                style={{ objectFit: 'contain' }}
+                width={2000} // Defines aspect ratio: 2000/400 = 5:1
+                height={400}
+                style={{ objectFit: 'contain' }} // Ensures entire image is visible within the 5:1 aspect ratio
+                className="w-full h-auto" // Ensures image scales to width, height is auto based on aspect ratio
                 data-ai-hint={item.hint}
                 priority={index === 0}
               />
