@@ -1,51 +1,24 @@
 "use client";
 
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectFade } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/autoplay';
-import 'swiper/css/effect-fade';
-
-const videos = [
-  { src: '/videos/video1.mp4', title: 'Delicious Dish Preparation' },
-  { src: '/videos/video2.mp4', title: 'Restaurant Ambiance Tour' },
-  { src: '/videos/video3.mp4', title: 'Chef Cooking Speciality' },
-];
+import Image from 'next/image';
 
 const HeroCarousel = () => {
   return (
     <section className="w-full h-screen relative">
-      <Swiper
-        modules={[Autoplay, EffectFade]}
-        spaceBetween={0}
-        slidesPerView={1}
-        loop
-        autoplay={{
-          delay: 5000,
-          disableOnInteraction: false,
-        }}
-        effect="fade"
-        fadeEffect={{
-          crossFade: true
-        }}
-        className="w-full h-full"
-      >
-        {videos.map((video, index) => (
-          <SwiperSlide key={index}>
-            <video
-              className="w-full h-full object-cover"
-              src={video.src}
-              autoPlay
-              loop
-              muted
-              playsInline
-              title={video.title}
-              aria-label={video.title}
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <Image
+        src="https://placehold.co/1920x1080.png"
+        alt="Placeholder hero image"
+        fill
+        style={{ objectFit: 'cover' }}
+        data-ai-hint="landscape nature"
+        priority
+      />
+      <div className="absolute inset-0 flex items-center justify-center bg-black/30">
+        <h2 className="text-4xl font-bold text-white text-center">
+          Dynamic Video Content Coming Soon
+        </h2>
+      </div>
     </section>
   );
 };
