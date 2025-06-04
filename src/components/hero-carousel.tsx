@@ -81,11 +81,6 @@ const HeroCarousel = () => {
                 data-ai-hint={item.hint}
                 priority={index === 0}
               />
-              <div className="absolute inset-0 flex items-center justify-center bg-black/40 p-4">
-                <h2 className="text-4xl md:text-5xl font-bold text-white text-center drop-shadow-md">
-                  {item.title}
-                </h2>
-              </div>
             </SwiperSlide>
           );
         })}
