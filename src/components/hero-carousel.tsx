@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from 'react';
@@ -13,40 +12,22 @@ import 'swiper/css/effect-fade';
 
 const carouselImages = [
   {
-    src: "/images/all-star.jpeg",
-    alt: "All-Star Special Offer",
+    src: "/images/All-in-one.jpg",
+    alt: "All in one offer",
     hint: "food promotion",
-    title: "Our All-Star Deal!",
+    title: "All In One",
   },
   {
-    src: "/images/bogof.jpeg",
-    alt: "Buy One Get One Free Offer",
+    src: "/images/Box-Clever.jpg",
+    alt: "Box Clever Deal",
+    hint: "meal box",
+    title: "Box Clever",
+  },
+  {
+    src: "/images/Double-Deal.jpg",
+    alt: "Double Deal Offer",
     hint: "discount offer",
-    title: "BOGOF! Don't Miss Out!",
-  },
-  {
-    src: "/images/burger-era.jpeg",
-    alt: "Delicious Burger from Burger Era",
-    hint: "burger meal",
-    title: "Welcome to the Burger Era",
-  },
-  {
-    src: "/images/family-fiesta.jpeg",
-    alt: "Family Fiesta Meal Deal",
-    hint: "family meal",
-    title: "Family Fiesta: Fun for All!",
-  },
-  {
-    src: "/images/monday.jpeg",
-    alt: "Special Monday Deal",
-    hint: "weekday special",
-    title: "Make Your Monday Special",
-  },
-  {
-    src: "/images/streetwise.jpeg",
-    alt: "Streetwise Meal Combo",
-    hint: "street food",
-    title: "Get Streetwise with Our Combo",
+    title: "Double Deal",
   },
 ];
 
