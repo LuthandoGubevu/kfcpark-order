@@ -32,6 +32,16 @@ const carouselImages = [
 ];
 
 const HeroCarousel = () => {
+  const [cacheBuster, setCacheBuster] = React.useState('');
+
+  React.useEffect(() => {
+    setCacheBuster(`?v=${new Date().getTime()}`);
+  }, []);
+
+  if (!cacheBuster) {
+    return null; // Or a loading spinner
+  }
+
   return (
     <section className="w-full relative bg-black">
       <Swiper
@@ -53,7 +63,7 @@ const HeroCarousel = () => {
           return (
             <SwiperSlide key={index} className="relative w-full bg-black">
               <Image
-                src={item.src}
+                src={`${item.src}${cacheBuster}`}
                 alt={item.alt}
                 width={2000} // Defines aspect ratio: 2000/400 = 5:1
                 height={400}
