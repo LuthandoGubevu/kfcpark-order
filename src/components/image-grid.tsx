@@ -1,13 +1,19 @@
 import React from 'react';
 import Image from 'next/image';
-import placeholderImages from '@/lib/placeholder-images.json'
 
-const imagePlaceholders = placeholderImages.image_grid.map((placeholder) => ({
-    src: `https://picsum.photos/seed/${placeholder.seed}/${placeholder.width}/${placeholder.height}`,
-    alt: placeholder.alt,
-    hint: placeholder.hint,
-    width: placeholder.width,
-    height: placeholder.height
+const imageFiles = [
+    '1.1.1.png', '1.1.2.png', '1.1.3.png',
+    '1.2.1.png', '1.2.2.png', '1.2.3.png',
+    '3.1.1.png', '3.1.2.png', '3.1.3.png',
+    '3.2.1.png', '3.2.2.png', '3.2.3.png'
+];
+
+const imagePlaceholders = imageFiles.map((file, index) => ({
+    src: `/images/${file}`,
+    alt: `Menu item ${index + 1}`,
+    hint: 'food item',
+    width: 540,
+    height: 960
 }));
 
 const ImageGrid = () => {
@@ -23,7 +29,7 @@ const ImageGrid = () => {
               style={{objectFit: 'cover'}}
               className="transition-transform duration-300 ease-in-out hover:scale-105"
               data-ai-hint={image.hint}
-              priority={index < 3} // Prioritize loading for images initially in viewport
+              priority={index < 3}
             />
           </div>
         ))}
