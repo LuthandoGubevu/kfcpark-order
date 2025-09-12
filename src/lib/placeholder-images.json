@@ -1,0 +1,16 @@
+{
+    "image_grid": [
+        { "seed": 101, "width": 540, "height": 960, "alt": "Placeholder image 1", "hint": "food item" },
+        { "seed": 102, "width": 540, "height": 960, "alt": "Placeholder image 2", "hint": "food item" },
+        { "seed": 103, "width": 540, "height": 960, "alt": "Placeholder image 3", "hint": "food item" },
+        { "seed": 104, "width": 540, "height": 960, "alt": "Placeholder image 4", "hint": "restaurant setting" },
+        { "seed": 105, "width": 540, "height": 960, "alt": "Placeholder image 5", "hint": "restaurant setting" },
+        { "seed": 106, "width": 540, "height": 960, "alt": "Placeholder image 6", "hint": "restaurant setting" },
+        { "seed": 107, "width": 540, "height": 960, "alt": "Placeholder image 7", "hint": "menu item" },
+        { "seed": 108, "width": 540, "height": 960, "alt": "Placeholder image 8", "hint": "special offer" },
+        { "seed": 109, "width": 540, "height": 960, "alt": "Placeholder image 9", "hint": "drink selection" },
+        { "seed": 110, "width": 540, "height": 960, "alt": "Placeholder image 10", "hint": "dessert option" },
+        { "seed": 111, "width": 540, "height": 960, "alt": "Placeholder image 11", "hint": "happy customers" },
+        { "seed": 112, "width": 540, "height": 960, "alt": "Placeholder image 12", "hint": "restaurant exterior" }
+    ]
+}
