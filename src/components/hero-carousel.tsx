@@ -60,10 +60,12 @@ const HeroCarousel = () => {
         className="w-full"
       >
         {carouselImages.map((item, index) => {
+          const imageSrc = `${item.src}${cacheBuster}`;
+          console.log(`Loading image from: ${imageSrc}`);
           return (
             <SwiperSlide key={index} className="relative w-full bg-black">
               <Image
-                src={`${item.src}${cacheBuster}`}
+                src={imageSrc}
                 alt={item.alt}
                 width={2000} // Defines aspect ratio: 2000/400 = 5:1
                 height={400}
