@@ -12,18 +12,6 @@ import 'swiper/css/effect-fade';
 
 const carouselImages = [
   {
-    src: "/images/All-in-one.jpg",
-    alt: "All in one offer",
-    hint: "food promotion",
-    title: "All In One",
-  },
-  {
-    src: "/images/Box-Clever.jpg",
-    alt: "Box Clever Deal",
-    hint: "meal box",
-    title: "Box Clever",
-  },
-  {
     src: "/images/Double-Deal.jpg",
     alt: "Double Deal Offer",
     hint: "discount offer",
