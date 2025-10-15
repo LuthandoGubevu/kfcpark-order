@@ -2,10 +2,10 @@ import React from 'react';
 import Image from 'next/image';
 
 const imageFiles = [
-    '1.1.1.png', '1.1.2.png', '1.1.3.png',
-    '1.2.1.png', '1.2.2.png', '1.2.3.png',
-    '3.1.1.png', '3.1.2.png', '3.1.3.png',
-    '3.2.1.png', '3.2.2.png', '3.2.3.png'
+    'New-1.1.1.png', 'New-1.1.2.png', 'New-1.1.3.png',
+    'New-1.2.1.png', 'New-1.2.2.png', 'New-1.2.3.png',
+    'New-3.1.1.png', 'New-3.1.2.png', 'New-3.1.3.png',
+    'New-3.2.1.png', 'New-3.2.2.png', 'New-3.2.3.png'
 ];
 
 const imagePlaceholders = imageFiles.map((file, index) => ({
