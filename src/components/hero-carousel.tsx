@@ -61,7 +61,6 @@ const HeroCarousel = () => {
       >
         {carouselImages.map((item, index) => {
           const imageSrc = `${item.src}${cacheBuster}`;
-          console.log(`Loading image from: ${imageSrc}`);
           return (
             <SwiperSlide key={index} className="relative w-full bg-black">
               <Image
