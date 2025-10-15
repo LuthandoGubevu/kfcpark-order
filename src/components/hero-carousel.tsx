@@ -43,7 +43,7 @@ const HeroCarousel = () => {
   }
 
   return (
-    <section className="w-full relative bg-black">
+    <section className="w-full relative bg-black aspect-[2000/400]">
       <Swiper
         modules={[Navigation, Pagination, EffectFade, Autoplay]}
         spaceBetween={0}
@@ -56,20 +56,18 @@ const HeroCarousel = () => {
           delay: 5000,
           disableOnInteraction: false,
         }}
-        autoHeight={true} // Adjust height to current slide
-        className="w-full"
+        className="w-full h-full"
       >
         {carouselImages.map((item, index) => {
           const imageSrc = `${item.src}${cacheBuster}`;
           return (
-            <SwiperSlide key={index} className="relative w-full bg-black">
+            <SwiperSlide key={index} className="relative w-full h-full bg-black">
               <Image
                 src={imageSrc}
                 alt={item.alt}
-                width={2000} // Defines aspect ratio: 2000/400 = 5:1
-                height={400}
-                style={{ objectFit: 'contain' }} // Ensures entire image is visible within the 5:1 aspect ratio
-                className="w-full h-auto" // Ensures image scales to width, height is auto based on aspect ratio
+                fill
+                style={{ objectFit: 'contain' }} 
+                className="w-full h-full"
                 data-ai-hint={item.hint}
                 priority={index === 0}
               />
