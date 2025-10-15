@@ -23,12 +23,6 @@ const carouselImages = [
     hint: "meal deal",
     title: "SW Loaded",
   },
-  {
-    src: "/images/crunch-master.jpg",
-    alt: "Crunch Master Offer",
-    hint: "burger deal",
-    title: "Crunch Master",
-  },
 ];
 
 const HeroCarousel = () => {
