@@ -1,6 +1,5 @@
 import Header from '@/components/header';
 import HeroCarousel from '@/components/hero-carousel';
-import ImageGrid from '@/components/image-grid';
 
 export default function HomePage() {
   return (
@@ -8,7 +7,6 @@ export default function HomePage() {
       <Header />
       <main className="flex-1">
         <HeroCarousel />
-        <ImageGrid />
       </main>
     </div>
   );
